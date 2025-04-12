@@ -13,7 +13,7 @@ function Title({ setMessages }: Props) {
         setIsResetting(true);
 
         await axios
-            .get("https://ai-chat-bkn4.onrender.com/reset", {
+            .get("https://raiffeisen.onrender.com/reset", {
                 headers: {
                     "Content-Type": "application/json",
                 },

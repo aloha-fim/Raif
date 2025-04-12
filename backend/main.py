@@ -35,9 +35,7 @@ origins = [
     #"http://localhost:5174",
     #"http://localhost:4173",
     #"http://localhost:3000",
-    "https://ai-chat-1-5hpc.onrender.com",
-    "https://www.forvava.com/",
-    "216.24.57.1"
+    "https://raiffeisen.onrender.com"
 ]
 
 
