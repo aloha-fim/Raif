@@ -16,6 +16,7 @@ def convert_text_to_speech(message):
 
     voice_rachel = "21m00Tcm4TlvDq8ikWAM"
     voice_jordan = "8riBCvtxjQFA3tP1sfno"
+    voice_david = "qTYTve5yPlN0yHKVuCYy"
 
     # Construct request headers and url
     headers = {
@@ -23,7 +24,7 @@ def convert_text_to_speech(message):
         "Content-Type": "application/json",
         "accept": "audio/mpeg" }
 
-    endpoint = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_jordan}"
+    endpoint = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_david}"
 
 
     try:

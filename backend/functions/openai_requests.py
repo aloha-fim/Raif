@@ -30,7 +30,7 @@ def get_chat_response(message_input):
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o-2024-05-13",
+            model="gpt-4-turbo",
             messages=messages
         )
         message_text = response["choices"][0]["message"]["content"]
