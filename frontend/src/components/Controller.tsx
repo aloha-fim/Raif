@@ -99,7 +99,7 @@ const Controller = () => {
 
           {messages.length == 0 && !isLoading && (
             <div className="text-center font-light italic mt-10">
-              Grüezi Customer: Everything for You
+              Grüezi Customer
             </div>
           )}
 
@@ -111,7 +111,7 @@ const Controller = () => {
         </div>
 
         {/* Recorder */}
-        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-orange-500 text-red-500">
+        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-red-500 text-red-900">
           <div className="flex justify-center items-center w-full">
             <div>
               <RecordMessage handleStop={handleStop} />
