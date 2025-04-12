@@ -42,8 +42,8 @@ const Controller = () => {
             audio.src = createBlobURL(blob);
 
             // Append to audio
-            const rachelMessage = { sender: "otto", blobUrl: audio.src };
-            messagesArr.push(rachelMessage);
+            const raifMessage = { sender: "raif", blobUrl: audio.src };
+            messagesArr.push(raifMessage);
             setMessages(messagesArr);
 
             // Play audio
@@ -71,16 +71,16 @@ const Controller = () => {
                 key={index + audio.sender}
                 className={
                   "flex flex-col " +
-                  (audio.sender == "otto" && "flex items-end")
+                  (audio.sender == "raif" && "flex items-end")
                 }
               >
                 {/* Sender */}
                 <div className="mt-4">
                   <p
                     className={
-                      audio.sender == "otto"
-                        ? "text-right mr-2 italic text-green-500"
-                        : "ml-2 italic text-blue-500"
+                      audio.sender == "raif"
+                        ? "text-right mr-2 italic text-red-500"
+                        : "ml-2 italic text-orange-500"
                     }
                   >
                     {audio.sender}
@@ -99,19 +99,19 @@ const Controller = () => {
 
           {messages.length == 0 && !isLoading && (
             <div className="text-center font-light italic mt-10">
-              Okay, dish it out ...
+              Grüezi Customer: Everything for You
             </div>
           )}
 
           {isLoading && (
             <div className="text-center font-light italic mt-10 animate-pulse">
-              Hmmm ...
+              ... Raif Processing ...
             </div>
           )}
         </div>
 
         {/* Recorder */}
-        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-sky-500 text-blue-500">
+        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-orange-500 text-red-500">
           <div className="flex justify-center items-center w-full">
             <div>
               <RecordMessage handleStop={handleStop} />

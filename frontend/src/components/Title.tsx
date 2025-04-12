@@ -30,7 +30,7 @@ function Title({ setMessages }: Props) {
 
     return (
         <div className='flex justify-between items-center w-full p-4 bg-gray-900 text-white font-bold shadow'>
-            <div className='italic'>Let's Talk</div>
+            <div className='italic'>Raiffeisen AI</div>
             {/*
             <a href="https://www.forvava.com/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-square" viewBox="0 0 16 16">
